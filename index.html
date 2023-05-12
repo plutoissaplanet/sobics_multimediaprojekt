@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobics</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"> </script>
+    <script src="sobics.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <audio id="audio" src="AllStar.mp3"></audio>
+    <audio id="action" src="action.mp3"></audio>
+    <audio id="donkey" src="DONKEY!!.mp3"></audio>
+<style>
+    @import url('https://fonts.cdnfonts.com/css/luminari');
+
+    button{
+        border-radius: 25px;
+        background-color:#3CFF02;
+        font-family: Luminari, sans-serif;
+        width: 100px;
+        height:50px;
+        display: block;
+        margin-top:20px;
+        border: none;
+        margin-left:50px;
+
+    }
+    form{
+        margin-top:50px;
+    }
+    input{
+        border-radius: 25px;
+        height:20px;
+        width:100px;
+    }
+    table{
+        margin-top: 20px;
+        margin-left:30px;
+    }
+
+    tbody{
+        margin-top:20px;
+
+    }
+    p{
+        font-family: Luminari, sans-serif;
+        font-size: 20px;
+    }
+    tr{
+        font-family: Luminari, sans-serif;
+    }
+    td{
+        padding:2px;
+    }
+
+</style>
+</head>
+<body>
+    <div  id="container">
+        <div id="timer"></div>
+        <div id="gamearea"></div>
+        <div id="buttonarea">
+            <form>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name">
+                <button type="submit">Log</button>
+            </form>
+            <p>Leaderboard: </p>
+            <table id="leaderboard">
+
+                <tbody class="tbody"></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
